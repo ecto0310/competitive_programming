@@ -141,7 +141,7 @@ for new_submission in ${new_submissions}; do
   echo "Fetching submission #${id}(${site})"
 
   if [ "${site}" = "AtCoder" ]; then
-    header="// URL: https://atcoder.jp/contests/${contest_id}/submissions/${id}\n// Date: $(date -d @${time} -R)\n// Language: ${language}"
+    header="// URL: https://atcoder.jp/contests/${contest_id}/submissions/${id}"$'\n'"// Date: $(date -d @${time} -R)"$'\n'"// Language: ${language}"
     directory="atcoder/${contest_id}/${problem_id}"
     filename="${directory}/${id}.$(get_extension ${language})"
     code=$(
@@ -152,7 +152,7 @@ for new_submission in ${new_submissions}; do
     )
 
   elif [ "${site}" = "Codeforces" ]; then
-    header="// URL: https://codeforces.com/contest/${contest_id}/submission/${id}\n// Date: $(date -d @${time} -R)\n// Language: ${language}"
+    header="// URL: https://codeforces.com/contest/${contest_id}/submission/${id}"$'\n'"// Date: $(date -d @${time} -R)"$'\n'"// Language: ${language}"
     directory="codeforces/${contest_id}/${problem_id}"
     filename="${directory}/${id}.$(get_extension ${language})"
     code=$(
@@ -163,7 +163,7 @@ for new_submission in ${new_submissions}; do
     )
 
   elif [ "${site}" = "AOJ" ]; then
-    header="// URL: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=${id}\n// Date: $(date -d @${time} -R)\n// Language: ${language}"
+    header="// URL: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=${id}"$'\n'"// Date: $(date -d @${time} -R)"$'\n'"// Language: ${language}"
     directory="aizu_online_judge/${problem_id}"
     filename="${directory}/${id}.$(get_extension ${language})"
     code=$(
@@ -174,7 +174,7 @@ for new_submission in ${new_submissions}; do
   fi
 
   mkdir -p "${directory}"
-  echo -e "${header}\n${code}" >${filename}
+  echo "${header}"$'\n'"${code}" >${filename}
 
   git add -A
   git commit -a -m "Add ${filename}" --date="$(date -d @${time} -R)"
