@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/tkppc4-2/submissions/11400014
-// Date: Tue, 31 Mar 2020 15:44:06 +0000
+// Date: Wed, 01 Apr 2020 00:44:06 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

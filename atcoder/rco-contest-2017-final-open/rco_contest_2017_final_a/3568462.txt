@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/rco-contest-2017-final-open/submissions/3568462
-// Date: Fri, 09 Nov 2018 08:31:38 +0000
+// Date: Fri, 09 Nov 2018 17:31:38 +0900
 // Language: Text (cat)
 pass
 pass

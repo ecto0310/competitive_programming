@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/chokudai_S002/submissions/6110445
-// Date: Mon, 24 Jun 2019 15:12:40 +0000
+// Date: Tue, 25 Jun 2019 00:12:40 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

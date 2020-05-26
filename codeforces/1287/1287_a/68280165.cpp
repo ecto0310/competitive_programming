@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1287/submission/68280165
-// Date: Sun, 05 Jan 2020 17:02:18 +0000
+// Date: Mon, 06 Jan 2020 02:02:18 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,8 +23,7 @@ int main()
         ans = max(ans, cnt);
         cnt = 0;
       }
-    cout << ans << "
-";
+    cout << ans << "\n";
   }
   return 0;
 }

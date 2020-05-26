@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/wtf19-open/submissions/7658587
-// Date: Sun, 22 Sep 2019 14:05:07 +0000
+// Date: Sun, 22 Sep 2019 23:05:07 +0900
 // Language: Kotlin (1.0.0)
 fun main(args: Array<String>)
 {

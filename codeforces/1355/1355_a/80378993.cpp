@@ -1,11 +1,10 @@
 // URL: https://codeforces.com/contest/1355/submission/80378993
-// Date: Sat, 16 May 2020 14:40:07 +0000
+// Date: Sat, 16 May 2020 23:40:07 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

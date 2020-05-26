@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/m-solutions2019/submissions/5768887
-// Date: Sun, 02 Jun 2019 14:55:02 +0000
+// Date: Sun, 02 Jun 2019 23:55:02 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -44,7 +44,6 @@ int main()
   }
   cout << sum << endl;
   for (i64 i = 0; i < n; i++)
-    cout << ans[i] << (i + 1 == n ? "
-" : " ");
+    cout << ans[i] << (i + 1 == n ? "\n" : " ");
   return 0;
 }

@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/abc165/submissions/12603644
-// Date: Sat, 02 May 2020 12:31:54 +0000
+// Date: Sat, 02 May 2020 21:31:54 +0900
 // Language: C++ (GCC 9.2.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 struct Point
 {

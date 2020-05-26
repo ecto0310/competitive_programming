@@ -4,8 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 i64 calc(i64 x, i64 y, i64 z)
 {

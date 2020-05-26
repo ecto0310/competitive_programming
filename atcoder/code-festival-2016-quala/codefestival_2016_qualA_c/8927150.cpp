@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/code-festival-2016-quala/submissions/8927150
-// Date: Thu, 12 Dec 2019 15:18:49 +0000
+// Date: Fri, 13 Dec 2019 00:18:49 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;

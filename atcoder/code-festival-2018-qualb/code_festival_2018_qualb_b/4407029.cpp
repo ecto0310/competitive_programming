@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/code-festival-2018-qualb/submissions/4407029
-// Date: Wed, 27 Feb 2019 15:45:08 +0000
+// Date: Thu, 28 Feb 2019 00:45:08 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 

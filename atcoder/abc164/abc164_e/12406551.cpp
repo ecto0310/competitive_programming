@@ -1,12 +1,11 @@
 // URL: https://atcoder.jp/contests/abc164/submissions/12406551
-// Date: Sun, 26 Apr 2020 16:57:31 +0000
+// Date: Mon, 27 Apr 2020 01:57:31 +0900
 // Language: C++ (GCC 9.2.1)
 #pragma GCC optimize("-O3")
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 struct Edge
 {

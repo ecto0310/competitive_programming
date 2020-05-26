@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/wtf19-open/submissions/5309279
-// Date: Wed, 08 May 2019 08:37:47 +0000
+// Date: Wed, 08 May 2019 17:37:47 +0900
 // Language: Python3 (3.4.3)
 n, k = map(int, input().split())
 a = list(map(int, input().split()))

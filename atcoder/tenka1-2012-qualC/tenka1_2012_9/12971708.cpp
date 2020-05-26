@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/tenka1-2012-qualC/submissions/12971708
-// Date: Sat, 09 May 2020 03:50:32 +0000
+// Date: Sat, 09 May 2020 12:50:32 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

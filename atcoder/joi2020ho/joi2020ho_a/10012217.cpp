@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/joi2020ho/submissions/10012217
-// Date: Sun, 09 Feb 2020 14:00:05 +0000
+// Date: Sun, 09 Feb 2020 23:00:05 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
@@ -37,6 +37,5 @@ int main()
   for (i64 i = 1; i < n; i++)
     ans[a[i].second] = max(left[i - 1], right[i + 1]);
   for (i64 i = 0; i < n + 1; i++)
-    cout << ans[i] << " 
-"[i == n];
+    cout << ans[i] << " \n"[i == n];
 }

@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/chokudai_S001/submissions/9539295
-// Date: Thu, 16 Jan 2020 16:32:36 +0000
+// Date: Fri, 17 Jan 2020 01:32:36 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;

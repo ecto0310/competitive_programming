@@ -1,11 +1,10 @@
 // URL: http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=4384092
-// Date: Tue, 21 Apr 2020 14:08:53 +0000
+// Date: Tue, 21 Apr 2020 23:08:53 +0900
 // Language: C++14
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

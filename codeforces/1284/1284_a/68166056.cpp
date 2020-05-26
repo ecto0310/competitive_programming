@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1284/submission/68166056
-// Date: Sat, 04 Jan 2020 12:10:24 +0000
+// Date: Sat, 04 Jan 2020 21:10:24 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,8 +20,7 @@ int main()
   {
     i64 y;
     cin >> y;
-    cout << s[(y - 1) % n] << t[(y - 1) % m] << "
-";
+    cout << s[(y - 1) % n] << t[(y - 1) % m] << "\n";
   }
   return 0;
 }

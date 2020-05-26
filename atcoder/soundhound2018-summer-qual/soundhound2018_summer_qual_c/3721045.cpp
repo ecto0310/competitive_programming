@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/soundhound2018-summer-qual/submissions/3721045
-// Date: Wed, 05 Dec 2018 07:21:57 +0000
+// Date: Wed, 05 Dec 2018 16:21:57 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

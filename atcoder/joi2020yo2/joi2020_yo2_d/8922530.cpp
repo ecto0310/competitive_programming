@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/joi2020yo2/submissions/8922530
-// Date: Thu, 12 Dec 2019 09:17:10 +0000
+// Date: Thu, 12 Dec 2019 18:17:10 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;

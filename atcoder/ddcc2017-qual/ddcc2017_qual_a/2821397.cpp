@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/ddcc2017-qual/submissions/2821397
-// Date: Tue, 10 Jul 2018 07:49:23 +0000
+// Date: Tue, 10 Jul 2018 16:49:23 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

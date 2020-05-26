@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/kupc2019/submissions/10333614
-// Date: Mon, 24 Feb 2020 16:27:00 +0000
+// Date: Tue, 25 Feb 2020 01:27:00 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;

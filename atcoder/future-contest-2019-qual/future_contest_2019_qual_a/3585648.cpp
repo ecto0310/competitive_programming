@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/future-contest-2019-qual/submissions/3585648
-// Date: Sun, 11 Nov 2018 11:44:22 +0000
+// Date: Sun, 11 Nov 2018 20:44:22 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -150,8 +150,7 @@ void output()
 
 	// for (int i = 0; i < m; i++)												 //
 	// 	for (int j = 0; j < m; j++)											 //
-	// 		cerr << lc[i][j] << (j == m - 1 ? "
-" : " "); //
+	// 		cerr << lc[i][j] << (j == m - 1 ? "\n" : " "); //
 }
 
 int main()
@@ -166,8 +165,7 @@ int main()
 	// for (int i = 0; i < m; i++)						 //
 	// 	for (int j = 0; j < m; j++)					 //
 	// 		cerr
-	// 				<< tlc[i][j] << (j == m - 1 ? "
-" : " "); //
+	// 				<< tlc[i][j] << (j == m - 1 ? "\n" : " "); //
 
 	return 0;
 }

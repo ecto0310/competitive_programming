@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/abc036/submissions/3415040
-// Date: Mon, 15 Oct 2018 15:00:57 +0000
+// Date: Tue, 16 Oct 2018 00:00:57 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -15,8 +15,7 @@ int main()
 		cin >> s[i];
 	for (int i = 0; i < n; i++)
 		for (int j = n - 1; - 1 < j; j--)
-			cout << s[j][i] << (j == 0 ? "
-" : "");
+			cout << s[j][i] << (j == 0 ? "\n" : "");
 
 	return 0;
 }

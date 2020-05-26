@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/bitflyer2018-final-open/submissions/2762435
-// Date: Sat, 30 Jun 2018 17:21:13 +0000
+// Date: Sun, 01 Jul 2018 02:21:13 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 

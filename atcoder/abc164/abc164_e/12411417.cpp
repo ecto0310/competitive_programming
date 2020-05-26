@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/abc164/submissions/12411417
-// Date: Mon, 27 Apr 2020 01:06:48 +0000
+// Date: Mon, 27 Apr 2020 10:06:48 +0900
 // Language: C++ (GCC 9.2.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 struct Edge
 {

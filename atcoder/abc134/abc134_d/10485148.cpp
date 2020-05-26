@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/abc134/submissions/10485148
-// Date: Mon, 02 Mar 2020 06:40:36 +0000
+// Date: Mon, 02 Mar 2020 15:40:36 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,7 +23,6 @@ int main()
   i64 size = ans.size();
   cout << size << endl;
   for (i64 i = 0; i < size; i++)
-    cout << ans[i] << " 
-"[i + 1 == size];
+    cout << ans[i] << " \n"[i + 1 == size];
   return 0;
 }

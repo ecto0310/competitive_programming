@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/pakencamp-2018-day2/submissions/3862892
-// Date: Mon, 24 Dec 2018 07:32:06 +0000
+// Date: Mon, 24 Dec 2018 16:32:06 +0900
 // Language: Text (cat)
 1 6 DDDRUUUL
 -1 -1 -1

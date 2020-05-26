@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/rcl-contest-2020-qual/submissions/10109571
-// Date: Sat, 15 Feb 2020 13:19:29 +0000
+// Date: Sat, 15 Feb 2020 22:19:29 +0900
 // Language: C++14 (GCC 5.4.1)
 #pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
@@ -93,7 +93,6 @@ int main()
   }
   cerr << bestScore.first << endl;
   for (i64 i = 0; i < n; i++)
-    cout << bestAns[i] << "
-";
+    cout << bestAns[i] << "\n";
   return 0;
 }

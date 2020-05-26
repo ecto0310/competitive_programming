@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/ttpc2019/submissions/7659929
-// Date: Sun, 22 Sep 2019 15:52:44 +0000
+// Date: Mon, 23 Sep 2019 00:52:44 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

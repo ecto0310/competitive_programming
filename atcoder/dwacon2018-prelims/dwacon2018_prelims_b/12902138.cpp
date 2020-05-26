@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/dwacon2018-prelims/submissions/12902138
-// Date: Wed, 06 May 2020 13:50:14 +0000
+// Date: Wed, 06 May 2020 22:50:14 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

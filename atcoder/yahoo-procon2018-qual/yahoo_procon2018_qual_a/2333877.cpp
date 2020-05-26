@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/yahoo-procon2018-qual/submissions/2333877
-// Date: Tue, 10 Apr 2018 15:39:04 +0000
+// Date: Wed, 11 Apr 2018 00:39:04 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 

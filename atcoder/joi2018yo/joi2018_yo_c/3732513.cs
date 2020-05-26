@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/joi2018yo/submissions/3732513
-// Date: Fri, 07 Dec 2018 11:18:57 +0000
+// Date: Fri, 07 Dec 2018 20:18:57 +0900
 // Language: C# (Mono 4.6.2.0)
 using System;
 class Program

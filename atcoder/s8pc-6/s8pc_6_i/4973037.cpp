@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/s8pc-6/submissions/4973037
-// Date: Sun, 14 Apr 2019 11:07:14 +0000
+// Date: Sun, 14 Apr 2019 20:07:14 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -23,8 +23,7 @@ int main()
         cout << "#";
       else
         cout << ".";
-    cout << "
-";
+    cout << "\n";
   }
 
   return 0;

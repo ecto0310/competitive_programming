@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/abc166/submissions/12770713
-// Date: Sun, 03 May 2020 13:31:29 +0000
+// Date: Sun, 03 May 2020 22:31:29 +0900
 // Language: C++ (GCC 9.2.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 i64 pow(i64 x, i64 n)
 {

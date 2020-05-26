@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/joi2016yo/submissions/3691164
-// Date: Fri, 30 Nov 2018 15:19:11 +0000
+// Date: Sat, 01 Dec 2018 00:19:11 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

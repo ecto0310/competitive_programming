@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1256/submission/64243130
-// Date: Mon, 04 Nov 2019 14:31:38 +0000
+// Date: Mon, 04 Nov 2019 23:31:38 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -43,8 +43,7 @@ int main()
   {
     cout << "YES" << endl;
     for (i64 i = 0; i < n; i++)
-      cout << ans[i] << (i + 1 == n ? "
-" : " ");
+      cout << ans[i] << (i + 1 == n ? "\n" : " ");
   }
   return 0;
 }

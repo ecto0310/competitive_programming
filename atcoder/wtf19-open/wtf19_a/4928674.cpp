@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/wtf19-open/submissions/4928674
-// Date: Fri, 12 Apr 2019 13:21:49 +0000
+// Date: Fri, 12 Apr 2019 22:21:49 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -44,8 +44,7 @@ int main()
     i64 size = ans.size();
     cout << size << endl;
     for (i64 i = 0; i < size; i++)
-      cout << ans[i] << (i + 1 == size ? "
-" : " ");
+      cout << ans[i] << (i + 1 == size ? "\n" : " ");
   }
   else
     cout << "-1" << endl;

@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1305/submission/72326660
-// Date: Tue, 03 Mar 2020 15:10:17 +0000
+// Date: Wed, 04 Mar 2020 00:10:17 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -48,16 +48,13 @@ int main()
     ans.push_back(t);
   }
   i64 asize = ans.size();
-  cout << asize << "
-";
+  cout << asize << "\n";
   for (i64 i = 0; i < asize; i++)
   {
     i64 isize = ans[i].size();
-    cout << isize << "
-";
+    cout << isize << "\n";
     for (i64 j = 0; j < isize; j++)
-      cout << ans[i][j] + 1 << " 
-"[j + 1 == isize];
+      cout << ans[i][j] + 1 << " \n"[j + 1 == isize];
   }
   return 0;
 }

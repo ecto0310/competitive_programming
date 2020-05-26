@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/atc001/submissions/11447854
-// Date: Thu, 02 Apr 2020 17:33:23 +0000
+// Date: Fri, 03 Apr 2020 02:33:23 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 struct UnionFind
 {

@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/code-festival-2016-qualb/submissions/2857104
-// Date: Mon, 16 Jul 2018 14:02:17 +0000
+// Date: Mon, 16 Jul 2018 23:02:17 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

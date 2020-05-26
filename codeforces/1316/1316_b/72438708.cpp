@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1316/submission/72438708
-// Date: Wed, 04 Mar 2020 15:16:51 +0000
+// Date: Thu, 05 Mar 2020 00:16:51 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -24,10 +24,8 @@ int main()
       cerr << s.substr(i, n - i) + tmp << endl;
     }
     sort(ans.begin(), ans.end());
-    cout << ans[0].first << "
-"
-         << ans[0].second << "
-";
+    cout << ans[0].first << "\n"
+         << ans[0].second << "\n";
   }
   return 0;
 }

@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/mujin-pc-2018/submissions/4021756
-// Date: Tue, 15 Jan 2019 16:50:32 +0000
+// Date: Wed, 16 Jan 2019 01:50:32 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

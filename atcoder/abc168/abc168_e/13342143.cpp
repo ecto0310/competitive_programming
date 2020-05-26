@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/abc168/submissions/13342143
-// Date: Sun, 17 May 2020 13:33:01 +0000
+// Date: Sun, 17 May 2020 22:33:01 +0900
 // Language: C++ (GCC 9.2.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 const i64 MOD = 1e9 + 7;
 

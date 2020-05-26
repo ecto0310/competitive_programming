@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/abc049/submissions/2853129
-// Date: Sun, 15 Jul 2018 14:19:16 +0000
+// Date: Sun, 15 Jul 2018 23:19:16 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -14,8 +14,7 @@ int main()
 	{
 		string c;
 		cin >> c;
-		cout << c << "
-"
+		cout << c << "\n"
 				 << c << endl;
 	}
 

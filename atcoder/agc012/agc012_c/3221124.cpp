@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/agc012/submissions/3221124
-// Date: Tue, 18 Sep 2018 12:23:28 +0000
+// Date: Tue, 18 Sep 2018 21:23:28 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -38,8 +38,7 @@ int main()
   for (int i = 1; i <= size; i++)
     cout << i << " ";
   for (int i = 0; i < size; i++)
-    cout << deq[i] << (i + 1 == size ? "
-" : " ");
+    cout << deq[i] << (i + 1 == size ? "\n" : " ");
 
   return 0;
 }

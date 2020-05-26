@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1284/submission/68178816
-// Date: Sat, 04 Jan 2020 12:50:35 +0000
+// Date: Sat, 04 Jan 2020 21:50:35 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -43,7 +43,6 @@ int main()
       cnt++;
     ans += n - cnt;
   }
-  cout << ans << "
-";
+  cout << ans << "\n";
   return 0;
 }

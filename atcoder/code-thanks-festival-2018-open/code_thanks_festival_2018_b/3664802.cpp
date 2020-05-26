@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/code-thanks-festival-2018-open/submissions/3664802
-// Date: Sun, 25 Nov 2018 04:43:02 +0000
+// Date: Sun, 25 Nov 2018 13:43:02 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

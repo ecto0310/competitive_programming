@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/rcl-contest-2020-qual/submissions/10107521
-// Date: Sat, 15 Feb 2020 12:24:55 +0000
+// Date: Sat, 15 Feb 2020 21:24:55 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
@@ -129,7 +129,6 @@ int main()
     if (!ans[i].move)
       cout << -1 << endl;
     else
-      cout << ans[i].r << " " << ans[i].c << " " << ans[i].d << "
-";
+      cout << ans[i].r << " " << ans[i].c << " " << ans[i].d << "\n";
   return 0;
 }

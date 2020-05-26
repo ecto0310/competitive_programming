@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/tkppc4-1/submissions/6557684
-// Date: Sat, 27 Jul 2019 08:50:45 +0000
+// Date: Sat, 27 Jul 2019 17:50:45 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -23,8 +23,7 @@ int main()
   sort(b.begin(), b.end(), greater<i64>());
   if (suma <= e)
   {
-    cout << "Yes
-0" << endl;
+    cout << "Yes\n0" << endl;
     return 0;
   }
   i64 sumb = e;
@@ -33,8 +32,7 @@ int main()
     sumb += b[i];
     if (suma <= sumb)
     {
-      cout << "Yes
-"
+      cout << "Yes\n"
            << i + 1 << endl;
       return 0;
     }
@@ -46,14 +44,12 @@ int main()
   {
     if (sumb < suma + a[i])
     {
-      cout << "No
-"
+      cout << "No\n"
            << i << endl;
       return 0;
     }
     suma += a[i];
   }
-  cout << "No
-0" << endl;
+  cout << "No\n0" << endl;
   return 0;
 }

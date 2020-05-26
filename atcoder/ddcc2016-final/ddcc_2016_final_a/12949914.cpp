@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/ddcc2016-final/submissions/12949914
-// Date: Fri, 08 May 2020 08:37:58 +0000
+// Date: Fri, 08 May 2020 17:37:58 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

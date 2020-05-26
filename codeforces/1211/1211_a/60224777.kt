@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1211/submission/60224777
-// Date: Sat, 07 Sep 2019 14:51:45 +0000
+// Date: Sat, 07 Sep 2019 23:51:45 +0900
 // Language: Kotlin
 fun main(args: Array<String>)
 {
@@ -28,8 +28,7 @@ fun main(args: Array<String>)
         print(i+1)
         break
       }
-    print("
-")
+    print("\n")
   }
   else
   {

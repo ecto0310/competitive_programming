@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/chokudai004/submissions/7233701
-// Date: Sat, 31 Aug 2019 14:15:41 +0000
+// Date: Sat, 31 Aug 2019 23:15:41 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -32,8 +32,7 @@ void output()
 {
   for (i64 i = 0; i < n; i++)
     for (i64 j = 0; j < n; j++)
-      cout << ans[i][j] << (j + 1 == n ? "
-" : " ");
+      cout << ans[i][j] << (j + 1 == n ? "\n" : " ");
 }
 
 i64 calc(vector<vector<i64>> tmp, i64 x, i64 y, i64 next = -1)

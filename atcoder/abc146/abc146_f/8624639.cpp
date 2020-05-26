@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/abc146/submissions/8624639
-// Date: Sun, 24 Nov 2019 13:05:12 +0000
+// Date: Sun, 24 Nov 2019 22:05:12 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
@@ -151,7 +151,6 @@ int main()
     i = st.second;
   }
   for (i64 i = ans.size() - 1; - 1 < i; i--)
-    cout << ans[i] << (i == 0 ? "
-" : " ");
+    cout << ans[i] << (i == 0 ? "\n" : " ");
   return 0;
 }

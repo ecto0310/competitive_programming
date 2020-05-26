@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/abc142/submissions/7911718
-// Date: Tue, 08 Oct 2019 16:08:02 +0000
+// Date: Wed, 09 Oct 2019 01:08:02 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -18,7 +18,6 @@ int main()
     ans[a - 1] = i + 1;
   }
   for (i64 i = 0; i < n; i++)
-    cout << ans[i] << (i + 1 == n ? "
-" : " ");
+    cout << ans[i] << (i + 1 == n ? "\n" : " ");
   return 0;
 }

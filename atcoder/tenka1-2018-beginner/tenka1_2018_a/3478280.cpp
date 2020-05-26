@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/tenka1-2018-beginner/submissions/3478280
-// Date: Sat, 27 Oct 2018 12:01:08 +0000
+// Date: Sat, 27 Oct 2018 21:01:08 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>

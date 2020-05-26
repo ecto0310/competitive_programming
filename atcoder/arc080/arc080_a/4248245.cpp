@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/arc080/submissions/4248245
-// Date: Tue, 12 Feb 2019 18:22:44 +0000
+// Date: Wed, 13 Feb 2019 03:22:44 +0900
 // Language: C++14 (GCC 5.4.1)
 #include "bits/stdc++.h"
 using namespace std;
@@ -22,8 +22,7 @@ using namespace std;
 #define pb(a) push_back((a))
 #define mp make_pair
 #define mt make_tuple
-#define endl "
-";
+#define endl "\n";
 #define outif(b, t, f) cout << ((b) ? (t) : (f)) << endl;
 #define sort(vec) sort((vec).begin(), (vec).end())
 typedef long long ll;

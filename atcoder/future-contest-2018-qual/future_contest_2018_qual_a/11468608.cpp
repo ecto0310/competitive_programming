@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/future-contest-2018-qual/submissions/11468608
-// Date: Fri, 03 Apr 2020 15:34:09 +0000
+// Date: Sat, 04 Apr 2020 00:34:09 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 const int timeLimit = 5800;
 

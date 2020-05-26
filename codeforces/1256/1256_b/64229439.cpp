@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1256/submission/64229439
-// Date: Mon, 04 Nov 2019 13:56:18 +0000
+// Date: Mon, 04 Nov 2019 22:56:18 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -33,8 +33,7 @@ int main()
         i = it - 1;
     }
     for (i64 i = 0; i < n; i++)
-      cout << a[i] << (i + 1 == n ? "
-" : " ");
+      cout << a[i] << (i + 1 == n ? "\n" : " ");
   }
   return 0;
 }

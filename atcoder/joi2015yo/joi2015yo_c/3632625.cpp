@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/joi2015yo/submissions/3632625
-// Date: Tue, 20 Nov 2018 15:47:24 +0000
+// Date: Wed, 21 Nov 2018 00:47:24 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -21,8 +21,7 @@ int main()
 					ans[ph][pw + i] = (ans[ph][pw + i] == -1 ? i : min(ans[ph][pw + i], i));
 	for (int i = 0; i < h; i++)
 		for (int j = 0; j < w; j++)
-			cout << ans[i][j] << (j == w - 1 ? "
-" : " ");
+			cout << ans[i][j] << (j == w - 1 ? "\n" : " ");
 
 	return 0;
 }

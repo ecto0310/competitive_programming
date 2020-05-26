@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/past201912-open/submissions/10983969
-// Date: Wed, 18 Mar 2020 10:09:55 +0000
+// Date: Wed, 18 Mar 2020 19:09:55 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 int main()
 {

@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/future-contest-2019-qual/submissions/7935493
-// Date: Fri, 11 Oct 2019 07:06:10 +0000
+// Date: Fri, 11 Oct 2019 16:06:10 +0900
 // Language: C++14 (Clang 3.8.0)
 #include <algorithm>
 #include <bitset>

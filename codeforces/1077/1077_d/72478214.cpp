@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1077/submission/72478214
-// Date: Thu, 05 Mar 2020 00:08:04 +0000
+// Date: Thu, 05 Mar 2020 09:08:04 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -40,7 +40,6 @@ int main()
     cnt.push(t);
   }
   for (i64 i = 0; i < k; i++)
-    cout << ans[i] << " 
-"[i + 1 == k];
+    cout << ans[i] << " \n"[i + 1 == k];
   return 0;
 }

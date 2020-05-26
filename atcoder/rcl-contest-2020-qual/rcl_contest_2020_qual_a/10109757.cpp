@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/rcl-contest-2020-qual/submissions/10109757
-// Date: Sat, 15 Feb 2020 13:24:30 +0000
+// Date: Sat, 15 Feb 2020 22:24:30 +0900
 // Language: C++14 (Clang 3.8.0)
 #include <algorithm>
 #include <bitset>
@@ -123,7 +123,6 @@ int main()
   }
   cerr << bestScore << endl;
   for (i64 i = 0; i < n; i++)
-    cout << bestAns[i] << "
-";
+    cout << bestAns[i] << "\n";
   return 0;
 }

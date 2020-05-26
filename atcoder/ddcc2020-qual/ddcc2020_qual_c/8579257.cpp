@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/ddcc2020-qual/submissions/8579257
-// Date: Sat, 23 Nov 2019 12:37:39 +0000
+// Date: Sat, 23 Nov 2019 21:37:39 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 using namespace std;
@@ -50,11 +50,9 @@ int main()
   }
   for (i64 i = 0; i < b; i++)
     for (i64 j = 0; j < w; j++)
-      cout << ans[b][j] << (j + 1 == w ? "
-" : " ");
+      cout << ans[b][j] << (j + 1 == w ? "\n" : " ");
   for (i64 i = b; i < h; i++)
     for (i64 j = 0; j < w; j++)
-      cout << ans[i][j] << (j + 1 == w ? "
-" : " ");
+      cout << ans[i][j] << (j + 1 == w ? "\n" : " ");
   return 0;
 }

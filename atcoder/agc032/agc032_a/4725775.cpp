@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/agc032/submissions/4725775
-// Date: Wed, 27 Mar 2019 00:34:46 +0000
+// Date: Wed, 27 Mar 2019 09:34:46 +0900
 // Language: C++14 (GCC 5.4.1)
 #include <bits/stdc++.h>
 #include <assert.h>
@@ -30,14 +30,12 @@ int main()
       }
     if (!erase)
     {
-      cout << -1 << "
-";
+      cout << -1 << "\n";
       return 0;
     }
   }
   for (int i = ans.size() - 1; 0 <= i; i--)
-    cout << ans[i] << "
-";
+    cout << ans[i] << "\n";
 
   return 0;
 }

@@ -1,5 +1,5 @@
 // URL: https://codeforces.com/contest/1287/submission/68280194
-// Date: Sun, 05 Jan 2020 17:02:28 +0000
+// Date: Mon, 06 Jan 2020 02:02:28 +0900
 // Language: GNU C++17
 #include <bits/stdc++.h>
 using namespace std;
@@ -27,7 +27,6 @@ int main()
           t += (char)('S'+'T'+'E' - s[i][l] - s[j][l]);
       ans += cnt[t];
     }
-  cout << ans / 3 << "
-";
+  cout << ans / 3 << "\n";
   return 0;
 }

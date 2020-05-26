@@ -1,11 +1,10 @@
 // URL: https://atcoder.jp/contests/abc168/submissions/13316016
-// Date: Sun, 17 May 2020 12:23:16 +0000
+// Date: Sun, 17 May 2020 21:23:16 +0900
 // Language: C++ (GCC 9.2.1)
 #include <bits/stdc++.h>
 using namespace std;
 using i64 = long long;
-#define endl "
-"
+#define endl "\n"
 
 const double PI = 3.141592653589793;
 

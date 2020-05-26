@@ -1,5 +1,5 @@
 // URL: https://atcoder.jp/contests/abc152/submissions/9623459
-// Date: Sun, 19 Jan 2020 13:00:48 +0000
+// Date: Sun, 19 Jan 2020 22:00:48 +0900
 // Language: Python3 (3.4.3)
 from fractions import gcd
 
