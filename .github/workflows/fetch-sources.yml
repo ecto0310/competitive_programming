@@ -16,5 +16,6 @@ jobs:
     - name: Fetch source
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        TZ: "Asia/Tokyo"
       run: |
         ./submission_crawler.sh
