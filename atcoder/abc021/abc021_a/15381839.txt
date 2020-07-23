@@ -1,0 +1,5 @@
+// URL: https://atcoder.jp/contests/abc021/submissions/15381839
+// Date: Fri, 24 Jul 2020 01:18:26 +0900
+// Language: Text (cat 8.28)
+1
+1
