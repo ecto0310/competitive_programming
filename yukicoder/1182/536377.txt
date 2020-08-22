@@ -1,0 +1,4 @@
+// URL: https://yukicoder.me/submissions/536377
+// Date: Sat, 22 Aug 2020 13:02:24 +0900
+// Language: Text
+Rho
