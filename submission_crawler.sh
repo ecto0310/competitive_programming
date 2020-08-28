@@ -80,7 +80,10 @@ for at_submission in ${at_submissions}; do
     continue
   fi
 
-  new_submissions=$(echo ${new_submissions} | jq '.|=.+[{"site":"AtCoder","time":"'${epoch_second}'","id":"'${id}'","contest_id":"'${contest_id}'","problem_id":"'${problem_id}'","language":"'${language}'"}]')
+  new_submissions=$(
+    echo ${new_submissions} |
+      jq '.|=.+[{"site":"AtCoder","time":"'${epoch_second}'","id":"'${id}'","contest_id":"'${contest_id}'","problem_id":"'${problem_id}'","language":"'${language}'"}]'
+  )
 done
 
 cf_submissions=$(
@@ -104,7 +107,10 @@ for cf_submission in ${cf_submissions}; do
     continue
   fi
 
-  new_submissions=$(echo ${new_submissions} | jq '.|=.+[{"site":"Codeforces","time":"'${creationTimeSeconds}'","id":"'${id}'","contest_id":"'${contestId}'","problem_id":"'${contestId}'_'${index,,}'","language":"'${programmingLanguage}'"}]')
+  new_submissions=$(
+    echo ${new_submissions} |
+      jq '.|=.+[{"site":"Codeforces","time":"'${creationTimeSeconds}'","id":"'${id}'","contest_id":"'${contestId}'","problem_id":"'${contestId}'_'${index,,}'","language":"'${programmingLanguage}'"}]'
+  )
 done
 
 aoj_submissions=$(
@@ -127,7 +133,10 @@ for aoj_submission in ${aoj_submissions}; do
     continue
   fi
 
-  new_submissions=$(echo ${new_submissions} | jq '.|=.+[{"site":"AOJ","time":"'${submissionDate:0:10}'","id":"'${judgeId}'","problem_id":"'${problemId}'","language":"'${language}'"}]')
+  new_submissions=$(
+    echo ${new_submissions} |
+      jq '.|=.+[{"site":"AOJ","time":"'${submissionDate:0:10}'","id":"'${judgeId}'","problem_id":"'${problemId}'","language":"'${language}'"}]'
+  )
 done
 
 exists=()
@@ -140,21 +149,21 @@ page=1
 while true; do
   first=$(
     curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page} |
-    dos2unix |
-    xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr[1]' --html - 2>/dev/null
+      dos2unix |
+      xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr[1]' --html - 2>/dev/null
   )
   if [ "${first}" = "" ]; then
     break
   fi
   for ind in $(seq 1 50); do
     data=$(
-      curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page}  |
-      dos2unix |
-      xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr['${ind}']' --html - 2>/dev/null
+      curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page} |
+        dos2unix |
+        xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr['${ind}']' --html - 2>/dev/null
     )
     id=$(
       echo "${data}" |
-      xmllint --xpath '//tr/td[1]/a/text()' --html - 2>/dev/null
+        xmllint --xpath '//tr/td[1]/a/text()' --html - 2>/dev/null
     )
     if [ "${id}" = "" ] || [ "${exists[${id}]}" = "1" ]; then
       continue
@@ -162,22 +171,25 @@ while true; do
 
     submissionDate=$(
       echo "${data}" |
-      xmllint --xpath '//tr/td[2]/text()' --html - 2>/dev/null
+        xmllint --xpath '//tr/td[2]/text()' --html - 2>/dev/null
     )
     submissionDate=$(date --date=${submissionDate} +%s)
     problemId=$(
       echo "${data}" |
-      xmllint --xpath '//tr/td[5]/a/@href' --html - 2>/dev/null |
-      sed 's/ href=\"\/problems\/no\///; s/\"//'
+        xmllint --xpath '//tr/td[5]/a/@href' --html - 2>/dev/null |
+        sed 's/ href=\"\/problems\/no\///; s/\"//'
     )
     language=$(
       echo "${data}" |
-      xmllint --xpath '//tr/td[6]/text()' --html - 2>/dev/null
+        xmllint --xpath '//tr/td[6]/text()' --html - 2>/dev/null
     )
 
-    new_submissions=$(echo ${new_submissions} | jq '.|=.+[{"site":"yukicoder","time":"'${submissionDate}'","id":"'${id}'","problem_id":"'${problemId}'","language":"'${language}'"}]')
+    new_submissions=$(
+      echo ${new_submissions} |
+        jq '.|=.+[{"site":"yukicoder","time":"'${submissionDate}'","id":"'${id}'","problem_id":"'${problemId}'","language":"'${language}'"}]'
+    )
   done
-  page=`expr $page + 1`
+  page=$(expr $page + 1)
 done
 
 new_submissions=$(echo ${new_submissions} | jq -c 'sort_by(.time) | .[]')
