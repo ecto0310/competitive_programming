@@ -58,6 +58,7 @@ new_submissions="[]"
 at_username="ecto0310"
 cf_username="ecto0310"
 aoj_username="ecto0310"
+yc_userid="7577"
 
 at_submissions=$(
   curl -so- --compressed https://kenkoooo.com/atcoder/atcoder-api/results?user=${at_username} |
@@ -129,6 +130,56 @@ for aoj_submission in ${aoj_submissions}; do
   new_submissions=$(echo ${new_submissions} | jq '.|=.+[{"site":"AOJ","time":"'${submissionDate:0:10}'","id":"'${judgeId}'","problem_id":"'${problemId}'","language":"'${language}'"}]')
 done
 
+exists=()
+
+for exists_id in $(ls -1R "yukicoder" | grep -E ^[0-9]\{7,\}\\. | cut -d . -f 1); do
+  exists[${exists_id}]=1
+done
+
+page=1
+while true; do
+  first=$(
+    curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page} |
+    dos2unix |
+    xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr[1]' --html - 2>/dev/null
+  )
+  if [ "${first}" = "" ]; then
+    break
+  fi
+  for ind in $(seq 1 50); do
+    data=$(
+      curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page}  |
+      dos2unix |
+      xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr['${ind}']' --html - 2>/dev/null
+    )
+    id=$(
+      echo "${data}" |
+      xmllint --xpath '//tr/td[1]/a/text()' --html - 2>/dev/null
+    )
+    if [ "${id}" = "" ] || [ "${exists[${id}]}" = "1" ]; then
+      continue
+    fi
+
+    submissionDate=$(
+      echo "${data}" |
+      xmllint --xpath '//tr/td[2]/text()' --html - 2>/dev/null
+    )
+    submissionDate=$(date --date=${submissionDate} +%s)
+    problemId=$(
+      echo "${data}" |
+      xmllint --xpath '//tr/td[5]/a/@href' --html - 2>/dev/null |
+      sed 's/ href=\"\/problems\/no\///; s/\"//'
+    )
+    language=$(
+      echo "${data}" |
+      xmllint --xpath '//tr/td[6]/text()' --html - 2>/dev/null
+    )
+
+    new_submissions=$(echo ${new_submissions} | jq '.|=.+[{"site":"yukicoder","time":"'${submissionDate}'","id":"'${id}'","problem_id":"'${problemId}'","language":"'${language}'"}]')
+  done
+  page=`expr $page + 1`
+done
+
 new_submissions=$(echo ${new_submissions} | jq -c 'sort_by(.time) | .[]')
 
 count=0
@@ -170,6 +221,14 @@ for new_submission in ${new_submissions}; do
       curl -so- "https://judgeapi.u-aizu.ac.jp/reviews/${id}" |
         dos2unix |
         jq -r '.sourceCode'
+    )
+  elif [ "${site}" = "yukicoder" ]; then
+    header="// URL: https://yukicoder.me/submissions/${id}"$'\n'"// Date: $(date -d @${time} -R)"$'\n'"// Language: ${language}"
+    directory="yukicoder/${problem_id}"
+    filename="${directory}/${id}.$(get_extension ${language})"
+    code=$(
+      curl -so- "https://yukicoder.me/submissions/${id}/source" |
+        dos2unix
     )
   fi
 
