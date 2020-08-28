@@ -155,11 +155,15 @@ while true; do
   if [ "${first}" = "" ]; then
     break
   fi
+  pageData=$(
+    curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page} |
+      dos2unix |
+      xmllint --xpath '//*[@id="content"]/div[2]/table/tbody' --html - 2>/dev/null
+  )
   for ind in $(seq 1 50); do
     data=$(
-      curl -so- --compressed 'https://yukicoder.me/users/'${yc_userid}'/submissions?status=AC&page='${page} |
-        dos2unix |
-        xmllint --xpath '//*[@id="content"]/div[2]/table/tbody/tr['${ind}']' --html - 2>/dev/null
+      echo "${pageData}" |
+        xmllint --xpath '//tr['${ind}']' --html - 2>/dev/null
     )
     id=$(
       echo "${data}" |
