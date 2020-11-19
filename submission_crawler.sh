@@ -46,6 +46,8 @@ get_extension() {
   esac
 }
 
+cd submission
+
 IFS=$'\n'
 
 git config --global user.name "ecto0310"
@@ -67,7 +69,7 @@ at_submissions=$(
 
 exists=()
 
-for exists_id in $(ls -1R "atcoder" | grep -E ^[0-9]\{7,\}\\. | cut -d . -f 1); do
+for exists_id in $(find "atcoder" -type f | gawk -F/ '{print $NF}' | cut -d . -f 1); do
   exists[${exists_id}]=1
 done
 
@@ -93,7 +95,7 @@ cf_submissions=$(
 
 exists=()
 
-for exists_id in $(ls -1R "codeforces" | grep -E ^[0-9]\{7,\}\\. | cut -d . -f 1); do
+for exists_id in $(find "codeforces" -type f | gawk -F/ '{print $NF}' | cut -d . -f 1); do
   exists[${exists_id}]=1
 done
 
@@ -120,7 +122,7 @@ aoj_submissions=$(
 
 exists=()
 
-for exists_id in $(ls -1R "aizu_online_judge" | grep -E ^[0-9]\{7,\}\\. | cut -d . -f 1); do
+for exists_id in $(find "aizu_online_judge" -type f | gawk -F/ '{print $NF}' | cut -d . -f 1); do
   exists[${exists_id}]=1
 done
 
@@ -141,7 +143,7 @@ done
 
 exists=()
 
-for exists_id in $(ls -1R "yukicoder" | grep -E ^[0-9]\{7,\}\\. | cut -d . -f 1); do
+for exists_id in $(find "yukicoder" -type f | gawk -F/ '{print $NF}' | cut -d . -f 1); do
   exists[${exists_id}]=1
 done
 
@@ -252,7 +254,7 @@ for new_submission in ${new_submissions}; do
   echo "${header}"$'\n'"${code}" >${filename}
 
   git add -A
-  git commit -a -m "Add ${filename}" --date="$(date -d @${time} -R)"
+  git commit -a -m "Add submission/${filename}" --date="$(date -d @${time} -R)"
 
   let count++
 
