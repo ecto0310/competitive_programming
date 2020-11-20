@@ -53,7 +53,7 @@ IFS=$'\n'
 git config --global user.name "ecto0310"
 git config --global user.email "ecto0310@gmail.com"
 git remote set-url origin https://ecto0310:${GITHUB_TOKEN}@github.com/ecto0310/competitive_programming.git
-git checkout -b master
+git checkout -b main
 
 new_submissions="[]"
 
@@ -262,6 +262,6 @@ for new_submission in ${new_submissions}; do
 done
 
 git rebase --committer-date-is-author-date HEAD~${count}
-git push origin master
+git push origin main
 
 echo "Successfully all process"
