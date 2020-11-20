@@ -18,3 +18,5 @@ My accepted code at a particular site is collected every day at 9:00 (JST).
   - other  
 - environment
   - cpp
+  - c_sharp
+  - kotlin
